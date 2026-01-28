@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",  // This label should match what you reference in launch.json
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "${file}",        // The currently open C file
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"          // Output executable name
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true  // Marks this as the default build task
+            },
+            "problemMatcher": ["$gcc"],  // Matches errors and warnings from GCC
+            "detail": "Generated task for compiling C code."
+        }
+    ]
+}
