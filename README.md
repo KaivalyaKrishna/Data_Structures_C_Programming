@@ -1,1 +1,1 @@
-# Data_Structures_3rd_Sem
+# Data_Structures_C_Programming
